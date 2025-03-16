@@ -24,10 +24,16 @@
   ```
 
 - Me pide habilitar algo
-  - `@workspace /tests Accept: "Configure Test Framework"`
+
+  ```yml
+  @workspace /tests Accept: "Configure Test Framework"
+  ```
 
 - prompt insisto en la creación de test
-  - `implementa ahora los test`
+
+  ```yml
+  implementa ahora los test
+  ```
 
 - prompt crear una api
 
@@ -37,11 +43,25 @@
 
   - Para ejecutar un ejemplo de la api del juego
 
-    - `curl -X POST -H "Content-Type: application/json" -d '{"choice": 1}' http://127.0.0.1:5000/play`
-    - `curl -X POST -H "Content-Type: application/json" -d '{"choice": 2}' http://127.0.0.1:5000/play`
-    - `curl -X POST -H "Content-Type: application/json" -d '{"choice": 3}' http://127.0.0.1:5000/play`
-    - `curl -X POST -H "Content-Type: application/json" -d '{"choice": 4}' http://127.0.0.1:5000/play`
-    - `curl -X POST -H "Content-Type: application/json" -d '{"choice": 5}' http://127.0.0.1:5000/play`
+  ```yml
+    curl -X POST -H "Content-Type: application/json" -d '{"choice": 1}' http://127.0.0.1:5000/play
+  ```yml
+
+  ```yml
+    curl -X POST -H "Content-Type: application/json" -d '{"choice": 2}' http://127.0.0.1:5000/play
+  ```
+
+  ```yml
+    curl -X POST -H "Content-Type: application/json" -d '{"choice": 3}' http://127.0.0.1:5000/play
+  ```
+
+  ```yml
+    curl -X POST -H "Content-Type: application/json" -d '{"choice": 4}' http://127.0.0.1:5000/play
+  ```
+
+  ```yml
+    curl -X POST -H "Content-Type: application/json" -d '{"choice": 5}' http://127.0.0.1:5000/play
+  ```
 
   - la salida se vería algo así:
 
@@ -61,7 +81,9 @@
 
 - Para ejecutar un ejemplo de la api del juego
 
-  - `curl http://127.0.0.1:5000/stats`
+  ```yml
+  curl http://127.0.0.1:5000/stats
+  ```  
 
   - mostrará una salida como esta
 
@@ -78,7 +100,9 @@
 
 - prompt extra para tener entorno
 
-  `quiero crear un entorno para instalar las dependencias`
+  ```yml
+  quiero crear un entorno para instalar las dependencias
+  ```  
 
 </details>
 
@@ -91,7 +115,9 @@
 
 - Ejecuta el siguiente comando para guardar las dependencias instaladas en un archivo requirements.txt:
 
-  `pip freeze > requirements.txt`
+  ```yml
+  pip freeze > requirements.txt
+  ```  
 
 - El archivo requirements.txt debería verse algo así:
 
@@ -111,16 +137,35 @@
   ```
 
 - Ahora, cualquier persona que quiera replicar tu entorno puede hacerlo siguiendo estos pasos:
-  1. Clonar el repositorio o copiar los archivos del proyecto.
-     - `git clone https://github.com/copilot-workshops/copilot-rock-paper-scissors`
-  2. Crear y activar un entorno virtual.
-     - `python3 -m venv venv`
-     - activar el entorno en Windows
-        - `source venv/Scripts/activate`
-     - activar el entorno en Windows
-        - `.\venv\Scripts\activate`
-  3. Instalar las dependencias desde el archivo requirements.txt:
-     - `pip install -r requirements.txt`
+  - Clonar el repositorio o copiar los archivos del proyecto.
+
+  ```yml
+  git clone https://github.com/copilot-workshops/copilot-rock-paper-scissors
+  ```
+  
+  - Crear y activar un entorno virtual.
+
+    ```yml
+    python3 -m venv venv
+    ```
+
+    - activar el entorno en Windows
+
+      ```yml
+      source venv/Scripts/activate
+      ```
+
+    - activar el entorno en Windows
+
+      ```yml
+      .\venv\Scripts\activate
+      ```
+
+  - Instalar las dependencias desde el archivo requirements.txt:
+
+  ```yml
+  pip install -r requirements.txt
+  ```  
 
 - Esto asegurará que todas las dependencias necesarias estén instaladas en el entorno virtual
 
