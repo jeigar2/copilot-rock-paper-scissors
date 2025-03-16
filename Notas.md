@@ -70,7 +70,7 @@ Werkzeug==2.0.1
 
 - Ahora, cualquier persona que quiera replicar tu entorno puede hacerlo siguiendo estos pasos:
   1. Clonar el repositorio o copiar los archivos del proyecto.
-    - `git clone `
+    - `git clone https://github.com/copilot-workshops/copilot-rock-paper-scissors`
   2. Crear y activar un entorno virtual.
     - `python3 -m venv venv`
     - activar el entorno en Windows
